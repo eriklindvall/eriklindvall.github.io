@@ -3,8 +3,7 @@ function fetch()
   var clusterId = $('#cluster-id').val();
   var password = $('#password').val();
   $.get({
-    //url: `https://${clusterId}:${password}@cirrus.esales.apptus.com:35000/accounts/${clusterId}/cluster/https`
-    url: 'https://google.com'
+    url: `https://${clusterId}:${password}@cirrus.esales.apptus.com:35000/accounts/${clusterId}/cluster/https`
   }).done(function(data){console.log(data)});
 }
 
