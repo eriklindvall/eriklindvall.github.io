@@ -4,7 +4,7 @@ function fetch()
   var password = $('#password').val();
   $.get({
     url: `https://${clusterId}:${password}@cirrus.esales.apptus.com:35000/accounts/${clusterId}/cluster/https`
-    success: function(data)
+    success: (data) =>
     {
       console.log(data);
     }
